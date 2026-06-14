@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한자 레이스</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 시작 화면 -->
+    <div id="startScreen">
+        <h1>한자 레이스</h1>
+
+        <p>
+            60초 동안 가장 많은 한자의 훈음을 맞혀보세요!
+        </p>
+
+        <button id="startButton">
+            게임 시작
+        </button>
+    </div>
+
+    <!-- 게임 화면 -->
+    <div id="game">
+
+        <div id="timer">
+            60
+        </div>
+
+        <div id="players">
+
+            <!-- 플레이어 1 -->
+            <div class="player" id="player1">
+
+                <div class="score">
+                    0점
+                </div>
+
+                <div class="hanja">
+                </div>
+
+                <button class="choice"></button>
+                <button class="choice"></button>
+                <button class="choice"></button>
+                <button class="choice"></button>
+
+            </div>
+
+            <!-- 플레이어 2 -->
+            <div class="player" id="player2">
+
+                <div class="score">
+                    0점
+                </div>
+
+                <div class="hanja">
+                </div>
+
+                <button class="choice"></button>
+                <button class="choice"></button>
+                <button class="choice"></button>
+                <button class="choice"></button>
+
+            </div>
+
+            <!-- 플레이어 3 -->
+            <div class="player" id="player3">
+
+                <div class="score">
+                    0점
+                </div>
+
+                <div class="hanja">
+                </div>
+
+                <button class="choice"></button>
+                <button class="choice"></button>
+                <button class="choice"></button>
+                <button class="choice"></button>
+
+            </div>
+
+            <!-- 플레이어 4 -->
+            <div class="player" id="player4">
+
+                <div class="score">
+                    0점
+                </div>
+
+                <div class="hanja">
+                </div>
+
+                <button class="choice"></button>
+                <button class="choice"></button>
+                <button class="choice"></button>
+                <button class="choice"></button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 종료 화면 -->
+    <div id="endScreen">
+
+        <h1>
+            게임 종료!
+        </h1>
+
+        <div id="result">
+        </div>
+
+        <button id="restartButton">
+            다시 하기
+        </button>
+
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

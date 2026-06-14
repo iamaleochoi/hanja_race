@@ -1,0 +1,136 @@
+body{
+    margin:0;
+    background:#f0f0f0;
+    font-family:"맑은 고딕";
+    text-align:center;
+}
+
+/* 시작 화면, 종료 화면 */
+#startScreen,
+#endScreen{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    z-index:100;
+}
+
+#startScreen h1,
+#endScreen h1{
+    font-size:60px;
+}
+
+#startScreen p{
+    font-size:25px;
+}
+
+#startButton,
+#restartButton{
+    width:200px;
+    height:70px;
+
+    font-size:30px;
+
+    border:none;
+    border-radius:15px;
+
+    background:dodgerblue;
+    color:white;
+
+    cursor:pointer;
+}
+
+#endScreen{
+    display:none;
+}
+
+/* 게임 화면 */
+#game{
+    display:none;
+}
+
+/* 타이머 */
+#timer{
+    font-size:70px;
+    margin:20px;
+    font-weight:bold;
+}
+
+/* 플레이어 영역 */
+#players{
+    display:flex;
+    gap:10px;
+
+    padding:10px;
+}
+
+/* 각 플레이어 */
+.player{
+    flex:1;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+/* 점수 */
+.score{
+    font-size:35px;
+    font-weight:bold;
+
+    margin-bottom:20px;
+}
+
+/* 한자 */
+.hanja{
+    font-size:100px;
+
+    margin-bottom:20px;
+}
+
+/* 보기 버튼 */
+.choice{
+
+    width:100%;
+    height:60px;
+
+    margin:7px 0;
+
+    font-size:22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#e0e0e0;
+
+    cursor:pointer;
+
+    transition:0.2s;
+}
+
+/* 마우스를 올렸을 때 */
+.choice:hover{
+    background:#d0d0d0;
+}
+
+/* 결과 화면 점수 */
+#result{
+    font-size:35px;
+
+    margin:30px;
+}
